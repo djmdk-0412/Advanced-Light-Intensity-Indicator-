@@ -26,9 +26,13 @@ To eliminate **50–100 Hz noise** introduced by AC-powered lighting, a **3rd-or
 
 **LTspice simulations** confirmed approximately **64 dB noise rejection**, while preserving slow ambient light variations.
 
-> 📷 *LTspice simulation – ripple elimination*
+<p align="center">
+  <img src="Images//Filter.png" width="600">
+</p>
 
-![LTspice Filter](images/Filter.png)
+<p align="center">
+  <em> 📷 *LTspice simulation – ripple elimination* </em>
+</p>
 
 ---
 
@@ -47,13 +51,18 @@ A **CD4026 decade counter/decoder** drives a **common-cathode seven-segment disp
 - Discrete logic implementation for level detection
 - LDR calibrated for near-linear response across full range
 
-**Proteus simulation** verified correct operation from **0 (dark)** to **7 (bright)**.
+**Proteus simulation** verified correct operation from **0 (dark)** to **7 (bright)**. 
 
-> 📷 *Screenshot: Comparator circuit and seven-segment display output*
+<p align="center">
+  <img src="Images/Comparator.png" width="600">
+</p>
 
-![Comparator and Display](images/Comparator.png)
+<p align="center">
+  <em> 📷 *Screenshot: Comparator circuit and seven-segment display output* </em>
+</p>
 
 ---
+<br>
 
 ## Feature 3: Avoiding Sudden Variations
 To prevent display flicker caused by rapid or transient light changes, a **stability-check mechanism** was implemented.
@@ -74,11 +83,16 @@ An **SPDT switch** allows this feature to be bypassed if required.
 
 **Proteus demonstrations** confirmed stable operation.
 
-> 📷 *Screenshot: Timer, counter, and latch circuitry*
 
-![Timer Circuit](images/Stability.png)
+<p align="center">
+  <img src="Images/Stability.png" width="600">
+</p>
 
+<p align="center">
+  <em>  📷 *Screenshot: Timer, counter, and latch circuitry* </em>
+</p>
 ---
+<br>
 
 ## Feature 4: Average Light Intensity Display
 A second averaging module displays the **average ambient light level** over a longer time window.
@@ -97,9 +111,16 @@ A second averaging module displays the **average ambient light level** over a lo
 
 Simulation results demonstrated effective long-term light intensity representation.
 
-> 📷 *Screenshot: Timer, counter, and latch circuitry*
- ![Averaging Circuit](images/Averaging.png)
+ <p align="center">
+  <img src="Images/Averaging.png" width="600">
+</p>
+
+<p align="center">
+  <em>  📷 *Screenshot: Timer, counter, and latch circuitry* </em>
+</p>
+
 ---
+<br>
 
 ## Summary
 The ALII module demonstrates how **analog signal conditioning, digital logic, and timing circuits** can be combined to create an intelligent light-monitoring system without programmable devices. It is suitable for **energy-efficient buildings, smart urban lighting, and sustainable systems**.
