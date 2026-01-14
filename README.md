@@ -28,7 +28,7 @@ To eliminate **50–100 Hz noise** introduced by AC-powered lighting, a **3rd-or
 
 > 📷 *LTspice simulation – ripple elimination*
 
-![LTspice Filter](images/Filter_ltspice.png)
+![LTspice Filter](images/Filter.png)
 
 ---
 
@@ -50,6 +50,8 @@ A **CD4026 decade counter/decoder** drives a **common-cathode seven-segment disp
 **Proteus simulation** verified correct operation from **0 (dark)** to **7 (bright)**.
 
 > 📷 *Screenshot: Comparator circuit and seven-segment display output*
+
+![Comparator and Display](images/Comparator.png)
 
 ---
 
@@ -74,6 +76,8 @@ An **SPDT switch** allows this feature to be bypassed if required.
 
 > 📷 *Screenshot: Timer, counter, and latch circuitry*
 
+![Timer Circuit](images/Stability.png)
+
 ---
 
 ## Feature 4: Average Light Intensity Display
@@ -93,6 +97,8 @@ A second averaging module displays the **average ambient light level** over a lo
 
 Simulation results demonstrated effective long-term light intensity representation.
 
+> 📷 *Screenshot: Timer, counter, and latch circuitry*
+ ![Averaging Circuit](images/Averaging.png)
 ---
 
 ## Summary
